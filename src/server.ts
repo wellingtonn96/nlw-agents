@@ -8,6 +8,7 @@ import {
 
 import { fastifyCors } from "@fastify/cors";
 import { env } from "./env.ts";
+import { getRoomsRote } from "./http/routes/get-rooms.ts";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -18,6 +19,8 @@ app.register(fastifyCors, {
 app.get("/health", () => {
   return "OK";
 });
+
+app.register(getRoomsRote);
 
 app.setSerializerCompiler(serializerCompiler);
 app.setValidatorCompiler(validatorCompiler);
