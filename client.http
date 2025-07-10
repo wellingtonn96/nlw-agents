@@ -25,7 +25,7 @@ Content-Type: application/json
 
 ###
 
-@roomId = {{createRoom.response.body.$.roomId}}
+@roomId = ed38b48b-c2cc-4f34-c917-c5111707daf9
 
 ###
 
@@ -37,7 +37,7 @@ GET {{baseUrl}}/rooms/{{roomId}}/questions
 
 # Create question
 # @name createQuestion
-POST {{baseUrl}}/rooms/3bedbc7f-9cc3-4d1c-a43f-09d0c92a5f4b/questions
+POST {{baseUrl}}/rooms/ed38b48b-c2cc-4f34-c917-c5111707daf9/questions
 Content-Type: application/json
 
 {
