@@ -15,6 +15,13 @@
       "when": 1752078199027,
       "tag": "0001_famous_bloodstrike",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752205217258,
+      "tag": "0002_sparkling_prowler",
+      "breakpoints": true
     }
   ]
 }
